@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+    db:
+        image: mysql:latest
+        environment:
+            - MYSQL_DATABASE=core
+            - MYSQL_USER=core
+            - MYSQL_PASSWORD=core
+            - MYSQL_ROOT_PASSWORD=core
+        ports:
+            - '3306:3306'
