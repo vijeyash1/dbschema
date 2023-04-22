@@ -22,13 +22,11 @@ func main() {
 	err = db.AutoMigrate(
 		&User{},
 		&Organization{},
+
 		&Service{},
 		&Role{},
 		&Action{},
-		&Features{},
-		&OrganizationUserRole{},
-		&RoleActionService{},
-		&OrganizationFeatureService{},
+		&Feature{},
 	)
 	if err != nil {
 		panic("failed to migrate database")
